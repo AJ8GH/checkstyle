@@ -33,3 +33,15 @@ May need the following for multi-module projects:
   </executions>
 </plugin>
 ```
+
+```shell
+mvn install:install-file \
+-DgroupId=io.github.aj8gh \
+-DartifactId=checkstyle \
+-Dversion=1.0.0 \
+-Dfile=<jar-file> \
+-Dpackaging=jar \
+-DgeneratePom=true \
+-DlocalRepositoryPath=. \
+-DcreateChecksum=true
+```

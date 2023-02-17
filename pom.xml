@@ -11,12 +11,22 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <maven.checkstyle.version>3.2.0</maven.checkstyle.version>
+
     <checkstyle.config.location>google_checks.xml</checkstyle.config.location>
     <checkstyle.supressions.location>${project.build.directory}/classes/checkstyle-suppressions.xml</checkstyle.supressions.location>
     <checkstyle.severity>warning</checkstyle.severity>
     <checkstyle.console>true</checkstyle.console>
     <checkstyle.fail>true</checkstyle.fail>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub aj8gh Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/aj8gh/checkstyle</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <pluginManagement>
