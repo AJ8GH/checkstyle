@@ -12,14 +12,15 @@ In the base project `pom.xml`:
 
 <properties>
   <!-- checkstyle -->
-  <checkstyle.config.location>google_checks.xml</checkstyle.config.location>
+  <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
+  <checkstyle.suppressions.location>suppressions.xml</checkstyle.suppressions.location>
   <checkstyle.severity>warning</checkstyle.severity>
   <checkstyle.fail>true</checkstyle.fail>
   <checkstyle.console>true</checkstyle.console>
 
   <!-- versions -->
   <maven.checkstyle.version>3.2.0</maven.checkstyle.version>
-  <checkstyle.version>1.0.0</checkstyle.version>
+  <checkstyle.version>0.0.1</checkstyle.version>
 </properties>
 ```
 
