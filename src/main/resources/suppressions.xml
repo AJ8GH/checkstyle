@@ -5,13 +5,7 @@
 
 <suppressions>
   <suppress
-      checks="SummaryJavadoc
-      |MissingJavadocType
-      |MissingJavadocMethod
-      |NonEmptyAtcClauseDescription
-      |JavadocParagraph
-      |JavadocPackage
-      |JavadocVariable"
+      checks="SummaryJavadoc|MissingJavadocType|MissingJavadocMethod|NonEmptyAtcClauseDescription|JavadocParagraph|JavadocPackage|JavadocVariable"
       files="."
   />
 </suppressions>

@@ -14,13 +14,10 @@ In the base project `pom.xml`:
   <!-- checkstyle -->
   <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
   <checkstyle.suppressions.location>suppressions.xml</checkstyle.suppressions.location>
-  <checkstyle.severity>warning</checkstyle.severity>
-  <checkstyle.fail>true</checkstyle.fail>
-  <checkstyle.console>true</checkstyle.console>
 
   <!-- versions -->
   <maven.checkstyle.version>3.2.0</maven.checkstyle.version>
-  <checkstyle.version>0.0.1</checkstyle.version>
+  <checkstyle.version>0.0.3</checkstyle.version>
 </properties>
 ```
 
@@ -51,13 +48,6 @@ In the base project `pom.xml`:
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <configLocation>${checkstyle.config.location}</configLocation>
-          <violationSeverity>${checkstyle.severity}</violationSeverity>
-          <failOnViolation>${checkstyle.fail}</failOnViolation>
-          <consoleOutput>${checkstyle.console}</consoleOutput>
-          <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
-        </configuration>
       </plugin>
     </plugins>
   </pluginManagement>

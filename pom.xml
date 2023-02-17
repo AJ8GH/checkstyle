@@ -6,18 +6,10 @@
 
   <groupId>io.github.aj8gh</groupId>
   <artifactId>checkstyle</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.3</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <maven.checkstyle.version>3.2.0</maven.checkstyle.version>
-
-    <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
-    <checkstyle.supressions.location>suppressions.xml</checkstyle.supressions.location>
-    <checkstyle.severity>warning</checkstyle.severity>
-    <checkstyle.console>true</checkstyle.console>
-    <checkstyle.fail>true</checkstyle.fail>
   </properties>
 
   <distributionManagement>
@@ -27,40 +19,5 @@
       <url>https://maven.pkg.github.com/aj8gh/checkstyle</url>
     </repository>
   </distributionManagement>
-
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>${maven.checkstyle.version}</version>
-          <configuration>
-            <suppressionsLocation>${checkstyle.supressions.location}</suppressionsLocation>
-            <configLocation>${checkstyle.config.location}</configLocation>
-            <violationSeverity>${checkstyle.severity}</violationSeverity>
-            <failOnViolation>${checkstyle.fail}</failOnViolation>
-            <consoleOutput>${checkstyle.console}</consoleOutput>
-          </configuration>
-          <executions>
-            <execution>
-              <id>verify</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
 </project>
